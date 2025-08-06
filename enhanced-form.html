@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        form {
+            background: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+            border: none;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>🎉 Welcome to Our Annual Tech Event</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Section 1: About the Event -->
+        <section>
+            <h2>About the Event</h2>
+            <p>Join us for an exciting tech event where you can network, learn, and explore innovations in the tech industry.</p>
+            <img src="https://via.placeholder.com/800x300" alt="Tech Event Banner">
+        </section>
+
+        <!-- Section 2: Event Schedule (Table) -->
+        <section>
+            <h2>📅 Event Schedule</h2>
+            <table>
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                    <th>Speaker</th>
+                </tr>
+                <tr>
+                    <td>09:00 AM</td>
+                    <td>Registration</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td>Keynote Speech</td>
+                    <td>Dr. Jane Smith</td>
+                </tr>
+                <tr>
+                    <td>11:30 AM</td>
+                    <td>Workshop: AI in 2025</td>
+                    <td>John Doe</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Section 3: Registration Form -->
+        <section>
+            <h2>📝 Register Now</h2>
+            <form action="#" method="post" autocomplete="on">
+                <!-- Full Name -->
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+                <!-- Email -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+                <!-- Phone -->
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1234567890" required pattern="[+0-9]{10,15}">
+
+                <!-- Gender -->
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">--Select Gender--</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <!-- Date of Birth -->
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <!-- Readonly Field -->
+                <label for="event">Event Name:</label>
+                <input type="text" id="event" name="event" value="Tech Innovators 2025" readonly>
+
+                <!-- Password -->
+                <label for="password">Create a Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter a strong password" required minlength="6">
+
+                <!-- Message -->
+                <label for="message">Additional Comments:</label>
+                <textarea id="message" name="message" placeholder="Write your message here..." rows="4"></textarea>
+
+                <!-- Checkbox -->
+                <label>
+                    <input type="checkbox" name="terms" required> I agree to the terms and conditions.
+                </label>
+
+                <!-- Submit Button -->
+                <input type="submit" value="Register">
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Tech Innovators Conference. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
